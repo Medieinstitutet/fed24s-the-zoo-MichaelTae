@@ -1,44 +1,33 @@
 import { useContext, useState } from 'react';
 import { NavLink } from 'react-router';
 import { AnimalContext } from '../../contexts/animalContext';
+import { Toggle } from '../toggle/toggle';
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { animal } = useContext(AnimalContext);
-  const toggleTheme = () => {
-    const html = document.querySelector('html');
-    if (html) {
-      html.classList.toggle('dark');
-      localStorage.setItem(
-        'theme',
-        html.classList.contains('dark') ? 'dark' : 'light'
-      );
-    }
-  };
+
   return (
-    <nav className='theme p-4 border  h-screen flex flex-col'>
-      <button
-        className='bg-blue-500 text-white p-2 rounded m-2'
-        onClick={toggleTheme}
-      >
-        Toggle Theme
-      </button>
+    <nav className='theme p-4 border flex flex-col w-full h-[99%] navbar'>
+      <Toggle />
       <ul className='flex  flex-col justify-center items-center gap-2'>
-        <li className='border w-full text-center p-2 rounded'>
-          <NavLink
-            to={'/'}
-            className={({ isActive }) =>
-              ` ${isActive ? 'text-blue-500' : 'text-white'}`
-            }
-          >
-            Home
-          </NavLink>
+        <li className='border w-full text-center  rounded'>
+          <div className='w-full  flex'>
+            <NavLink
+              to={'/'}
+              className={({ isActive }) =>
+                ` ${isActive ? 'text-blue-500' : 'theme'} w-full  h-full p-2`
+              }
+            >
+              Hem
+            </NavLink>
+          </div>
         </li>
-        <li
-          className='border w-full text-center p-2 rounded cursor-pointer relative'
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          Animals &darr;
+        <li className='border w-full text-center rounded cursor-pointer relative'>
+          <div onClick={() => setOpen((prev) => !prev)} className=' w-full p-2'>
+            Animals &darr;
+          </div>
+
           {open && (
             <ul className='absolute left-0 right-0 theme z-10 mt-2 border rounded shadow'>
               {animal.length === 0 ? (
