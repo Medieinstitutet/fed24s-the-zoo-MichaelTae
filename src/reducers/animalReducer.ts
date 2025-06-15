@@ -6,7 +6,7 @@ export enum AnimalActionTypes {
 }
 
 export type AnimalAction =
-  | { type: AnimalActionTypes.FEED; payload: string }
+  | { type: AnimalActionTypes.FEED; payload: number }
   | { type: AnimalActionTypes.GET; payload: IAnimal[] };
 
 export const AnimalReducer = (
@@ -16,7 +16,7 @@ export const AnimalReducer = (
   switch (action.type) {
     case AnimalActionTypes.FEED:
       return animal.map((a) => {
-        if (a.id === parseInt(action.payload)) {
+        if (a.id === action.payload) {
           return {
             ...a,
             isFed: true,
