@@ -7,3 +7,22 @@
 .dark .theme {
   @apply bg-gray-900 text-white;
 }
+/* .theme button {
+  @apply;
+} */
+.theme button:hover {
+  @apply bg-blue-400;
+}
+.dark .theme button:hover {
+  @apply bg-green-800/20;
+}
+
+.dark .theme button {
+  @apply text-green-500 shadow-md shadow-green-500/50;
+}
+.dark .navbar {
+  @apply border-green-500/50;
+}
+.dark .layout {
+  @apply border-green-500/50;
+}
