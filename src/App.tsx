@@ -2,10 +2,16 @@ import { RouterProvider } from 'react-router';
 import './App.css';
 import { router } from './utils/router';
 import { AnimalContext } from './contexts/animalContext';
-import { useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import { AnimalReducer } from './reducers/animalReducer';
 function App() {
-  const [animal, dispatch] = useReducer(AnimalReducer, []);
+  const [animal, dispatch] = useReducer(AnimalReducer, [], () => {
+    const local = localStorage.getItem('animals');
+    return local ? JSON.parse(local) : [];
+  });
+  useEffect(() => {
+    localStorage.setItem('animals', JSON.stringify(animal));
+  }, [animal]);
   window.onload = () => {
     localStorage.getItem('theme')
       ? document.documentElement.classList.add(localStorage.getItem('theme')!)
