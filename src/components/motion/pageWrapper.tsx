@@ -7,7 +7,7 @@ export const PageWrapper = ({ children }: { children: ReactNode }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -30 }}
     transition={{ duration: 0.4 }}
-    style={{ height: '100%', overflow: 'scroll' }}
+    style={{ height: '100%', overflow: 'auto' }}
   >
     {children}
   </motion.div>
