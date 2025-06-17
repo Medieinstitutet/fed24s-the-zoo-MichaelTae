@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AnimalContext } from '../../contexts/animalContext';
 import { Link } from 'react-router';
 import WarningSvg from '../icons/warningSvg';
@@ -6,13 +6,19 @@ import { Countdown } from '../countdown/countdown';
 import { motion } from 'framer-motion';
 export const Card = () => {
   const animalContext = useContext(AnimalContext);
+  const [now, setNow] = useState(new Date());
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNow(new Date());
+    }, 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
   if (!animalContext) {
     return <p>Loading...</p>;
   }
   if (animalContext.animal.length === 0) {
     return <p>No animals found.</p>;
   }
-  const now = new Date();
 
   const listVariants = {
     visible: {
