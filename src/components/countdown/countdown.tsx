@@ -32,7 +32,9 @@ export const Countdown = ({ fedLast }: { fedLast: Date }) => {
 
   return (
     <div className='flex flex-col items-center justify-center'>
-      <p className='text-lg font-bold'>Tid kvar tills nästa matning:</p>
+      {timeLeft > 0 && (
+        <p className='text-lg font-bold'>Tid kvar tills nästa matning:</p>
+      )}
       <p className='text-2xl font-mono'>
         {timeLeft > 0 ? formatTime(timeLeft) : 'Redo att matas!'}
       </p>
