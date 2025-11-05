@@ -72,7 +72,7 @@ Ha roligt, skratta och lär er massor!
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-MichaelTae\src\reducers\animalReducer.ts - no-unused-vars - 'FEED' is defined but never used.,no-unused-vars - 'GET' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller alla krav för betyg G och VG. Applikationen är välstrukturerad med bra användning av React-router för navigering och context för statehantering. Reducers används effektivt för hantering av djurdata och information om status visas korrekt och diskret. Bildlänksfel hanteras korrekt och användningen av animationer gör användargränssnittet snyggt och användarvänligt. Det finns också en bra användning av Tailwind CSS för stilisering.
+📌 **Motivering:** Koden uppfyller alla VG-krav, inklusive avancerad state-management och användning av context, samt korrekt hantering av bilder och datahämtning. Tailwind används som CSS-alternativ och subtila animeringar finns.
 
 💡 **Förbättringsförslag:**  
-Inga större förbättringar behövs. Dock kan ytterligare kommentarer i koden vara till hjälp för att bättre beskriva komplexa logikavsnitt för framtida utvecklare eller för att förbättra underhållbarheten.
+Modularisering av kod och mer omfattande testing rekommenderas för förbättrad struktur och hållbarhet.
