@@ -72,7 +72,7 @@ Ha roligt, skratta och lär er massor!
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-MichaelTae\src\reducers\animalReducer.ts - no-unused-vars - 'FEED' is defined but never used.,no-unused-vars - 'GET' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller alla VG-krav, inklusive avancerad state-management och användning av context, samt korrekt hantering av bilder och datahämtning. Tailwind används som CSS-alternativ och subtila animeringar finns.
+📌 **Motivering:** Koden uppfyller alla krav för både G och VG, är välstrukturerad och utnyttjar moderna tekniker effektivt.
 
 💡 **Förbättringsförslag:**  
-Modularisering av kod och mer omfattande testing rekommenderas för förbättrad struktur och hållbarhet.
+Inga större förbättringar behövs.
