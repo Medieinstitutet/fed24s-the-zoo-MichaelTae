@@ -72,7 +72,7 @@ Ha roligt, skratta och lär er massor!
 - C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-MichaelTae\src\reducers\animalReducer.ts - no-unused-vars - 'FEED' is defined but never used.,no-unused-vars - 'GET' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller alla krav för både G och VG, är välstrukturerad och utnyttjar moderna tekniker effektivt.
+📌 **Motivering:** Projektet uppfyller alla krav för både betyg G och VG. Det innehåller en välstrukturerad routerkonfiguration, korrekt hantering av djurdata via reducer och custom hooks, samt implementering av subtila animationer.
 
 💡 **Förbättringsförslag:**  
-Inga större förbättringar behövs.
+Flera enhetstester kan läggas till för att säkerställa robustheten. Kodoptimering för prestanda kan också övervägas.
