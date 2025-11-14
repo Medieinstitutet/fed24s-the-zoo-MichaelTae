@@ -1,7 +1,6 @@
 # 📌 Rättningsrapport – fed24s-the-zoo-MichaelTae
 
 ## 🎯 Uppgiftens Krav:
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xBUCHFwF)
 # The Zoo
 
 I denna inlämningsuppgift kommer ni att bygga ett zoo. Zoo:t har ett antal djur som kommer behöva matas. 
@@ -66,13 +65,12 @@ Välj en teknik gällande css som ni antingen vill lära er mer om eller som ni 
 
 Ha roligt, skratta och lär er massor!
 
-
 ## 🔍 ESLint-varningar:
-- C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-MichaelTae\src\hooks\useFetchAnimals.ts - no-console - Unexpected console statement.
-- C:\Work\AssignmentCorrector\backend\repos\fed24s-the-zoo-MichaelTae\src\reducers\animalReducer.ts - no-unused-vars - 'FEED' is defined but never used.,no-unused-vars - 'GET' is defined but never used.
+- /app/repos/fed24s-the-zoo-MichaelTae/src/hooks/useFetchAnimals.ts - no-console - Unexpected console statement.
+- /app/repos/fed24s-the-zoo-MichaelTae/src/reducers/animalReducer.ts - no-unused-vars - 'FEED' is defined but never used.,no-unused-vars - 'GET' is defined but never used.
 
-## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller alla krav för både betyg G och VG. Det innehåller en välstrukturerad routerkonfiguration, korrekt hantering av djurdata via reducer och custom hooks, samt implementering av subtila animationer.
+## 🏆 **Betyg: G**
+📌 **Motivering:** Koden uppfyller alla grundläggande krav för betyg G. Projektet använder en router för att visa olika sidor och hanterar trasiga bildlänkar korrekt. Djuren kan matas och tiden sparas, och det finns en översiktssida där djuren kan klickas på. Projektet använder även en annan teknik än ren CSS för styling. Dock finns det vissa områden som kan förbättras för att nå VG-nivån.
 
 💡 **Förbättringsförslag:**  
-Flera enhetstester kan läggas till för att säkerställa robustheten. Kodoptimering för prestanda kan också övervägas.
+För att nå VG-nivån behöver projektet använda context istället för props för kommunikation mellan komponenter och använda reducers istället för state för djurhantering. Det bör också implementera subtila animeringar vid klick på knappar och route-förändringar. Kodstrukturen kan förbättras genom att säkerställa att alla komponenter är logiskt organiserade och att DRY-principen följs mer konsekvent. Error handling kan förbättras genom att säkerställa att alla potentiella fel hanteras korrekt, särskilt vid API-anrop.
